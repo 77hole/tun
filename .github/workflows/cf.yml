@@ -97,6 +97,8 @@ jobs:
           apiToken: ${{ secrets.CF_API_TOKEN }}
           # input overrides env-defaults, regardless
           environment: ${{ env.WORKERS_ENV }}
+          secrets: |
+            UUID
         env:
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
           GIT_COMMIT_ID: ${{ env.GIT_REF }}
