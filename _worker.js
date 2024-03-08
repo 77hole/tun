@@ -31,6 +31,7 @@ export default {
 		// uuid_validator(request);
 		try {
 			userID = env.UUID || userID;
+			console.log(userID,env.UUID);
 			proxyIP = env.PROXYIP || proxyIP;
 			dohURL = env.DNS_RESOLVER_URL || dohURL;
 			let userID_Path = userID;
