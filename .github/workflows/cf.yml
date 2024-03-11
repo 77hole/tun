@@ -102,7 +102,7 @@ jobs:
         env:
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
           GIT_COMMIT_ID: ${{ env.GIT_REF }}
-          UUID: ${{secrets.CF_WORKER_TUNNEL_UUID}}
+          UUID: ${{secrets.CF_TUN_UUID}}
 
       - name: 🎤 Notice
         run: |
