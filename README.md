@@ -60,13 +60,13 @@ You can click the button below to deploy directly.
    note: `uuid your set` is the uuid you set in UUID enviroment or `wrangler.toml`, `_worker.js` file.
    when you set multiple uuid, you can will use `https://tun.<yourusername>.workers.dev/sub/uuid1/?format=clash` to get the subscribe content with `uuid1` path and `clash` format.(only support first uuid in multiple uuid set)
 
-## subscribe Cloudflare bestip(pure ip) link
+## Subscribe Cloudflare bestip(pure ip) link
 
 1. visit `https://tun.<yourusername>.workers.dev/bestip/uuid your set` to get subscribe info.
 
 2. cpoy subscribe url link `https://tun.<yourusername>.workers.dev/bestip/uuid your set` to any clients(clash/v2rayN/v2rayNG) you want to use.
 
-## multiple port support (Optional)
+## Multiple port support (Optional)
 
    <!-- let portArray_http = [80, 8080, 8880, 2052, 2086, 2095];
 	let portArray_https = [443, 8443, 2053, 2096, 2087, 2083]; -->
@@ -83,7 +83,7 @@ https port: 443, 8443, 2053, 2096, 2087, 2083
 
 if you deploy in cloudflare pages, https port is not supported. Simply add multiple ports node drictly use subscribe link, subscribe content will return all Cloudflare supported ports.
 
-## proxyIP (Optional)
+## ProxyIP (Optional)
 
 1. When deploy in cloudflare pages, you can set proxyIP in `wrangler.toml` file. variable name is `PROXYIP`.
 
